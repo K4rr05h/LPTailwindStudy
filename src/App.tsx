@@ -1,26 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import tw from 'tailwind-styled-components';
 
-function App() {
+import Header from './components/Header/header';
+import Hero from './components/Main/Hero/Hero';
+import Features from './components/Main/Features/Features';
+import Content from './components/Main/Content/Content';
+import Testimonials from './components/Main/Testimonials/Testimonials';
+import Portfolio from './components/Main/Portfolio/Portfolio';
+import FAQ from './components/Main/FAQ/FAQ';
+import CTA from './components/Main/CallToAction/CTA';
+import Footer from './components/Footer/Footer';
+
+export default function App() {
+
+  const [ativarCor, SetAtivarCor] = useState(false);
+
+  useEffect(function(){
+    function positionScroll(){
+      if(window.scrollY > 60){
+        SetAtivarCor(true);
+      }else{
+        SetAtivarCor(false);
+      }
+    }
+
+    window.addEventListener('scroll', positionScroll);
+  }, []);
+
+  // Estilização geral do código
+
+  const Body = tw.div`
+    bg-bluebg
+    h-full
+  `
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+    // Modulação de cada sessão da Landing Page
+    
+    <Body>
+      <Header acao={ativarCor} />
+      <Hero/>
+      <Features/>
+      <Content/>
+      <Testimonials/>
+      <Portfolio/>
+      <FAQ/>
+      <CTA/>
+      <Footer/>
+    </Body>
+  )
+}
