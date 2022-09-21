@@ -22,7 +22,8 @@ module.exports = {
           'bluebg': '#4640BE'
         },
         borderRadius: {
-          'img' : '40px'
+          'img' : '40px',
+          'img2' : '60px'
         }
           },
         plugins: [],

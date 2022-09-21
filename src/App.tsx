@@ -8,7 +8,6 @@ import Content from './components/Main/Content/Content';
 import Testimonials from './components/Main/Testimonials/Testimonials';
 import Portfolio from './components/Main/Portfolio/Portfolio';
 import FAQ from './components/Main/FAQ/FAQ';
-import CTA from './components/Main/CallToAction/CTA';
 import Footer from './components/Footer/Footer';
 
 export default function App() {
@@ -46,7 +45,6 @@ export default function App() {
       <Testimonials/>
       <Portfolio/>
       <FAQ/>
-      <CTA/>
       <Footer/>
     </Body>
   )

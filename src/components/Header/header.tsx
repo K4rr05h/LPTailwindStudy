@@ -9,8 +9,6 @@ export default function header(props: { acao: any; }) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [isNavOpen, setIsNavOpen] = useState(false);
     const toggle = () => setIsNavOpen(!isNavOpen);
-    const hide = () => setIsNavOpen(false);
-    const show = () => setIsNavOpen(true)
 
     // Header Styles
     const Header = tw.div`
@@ -21,8 +19,9 @@ export default function header(props: { acao: any; }) {
     justify-between
     items-center
     w-full
-    bg-sky-300/25
+    bg-transparent
     rounded-b-lg
+    z-100
     `
     const Items = tw.div`
     flex
@@ -67,7 +66,7 @@ export default function header(props: { acao: any; }) {
     rounded-md
     cursor-pointer
     text-white
-    align-text-center
+    text-center
     text-sm
     bg-transparent
     px-3
@@ -134,6 +133,10 @@ export default function header(props: { acao: any; }) {
     `
     const MobileNavOpen = tw.div`
     fixed
+
+    divide-y
+    divide-white/10
+
     z-50
     text-center
     w-full
@@ -141,22 +144,19 @@ export default function header(props: { acao: any; }) {
         
     font-semibold
     `
-    const ItemMobile = tw.div`
+    const ItemMobile = tw.a`
         block
-        rounded-md
         cursor-pointer
         text-white
         align-text-center
         text-2xl
 
-        mt-1
         py-2
         pr-2
 
         font-quick
         
         // hover
-        transition
         ease-in-out
         duration-300
         hover:text-red-200
@@ -169,7 +169,7 @@ export default function header(props: { acao: any; }) {
             <Header 
             className={
                 props.acao ? 
-                'backdrop-blur-sm transition ease-in duration-500' 
+                'duration-500 bg-sky-600/50 backdrop-blur-sm ease-in' 
                 : 
                 ''}>
                     <Logo>
@@ -239,20 +239,26 @@ export default function header(props: { acao: any; }) {
                     </svg>
                 </XBtn>
                 <MobileNavOpen>
-                    <ItemMobile className="mt-32">
-                    <a href="./App.tsx">Home</a>
+                    <ItemMobile 
+                    className="mt-32"
+                    href="./App.tsx">
+                        Home
                     </ItemMobile>
-                    <ItemMobile>
-                    <a href="./App.tsx">Portfólio</a>
+                    <ItemMobile 
+                    href="./App.tsx">
+                        Portfólio
                     </ItemMobile>
-                    <ItemMobile>
-                    <a href="./App.tsx">Services</a>
+                    <ItemMobile 
+                    href="./App.tsx">
+                        Services
                     </ItemMobile>
-                    <ItemMobile>
-                    <a href="./App.tsx">Blog</a>
+                    <ItemMobile 
+                    href="./App.tsx">
+                        Blog
                     </ItemMobile>
-                    <ItemMobile>
-                    <a href="./App.tsx">About us</a>
+                    <ItemMobile 
+                    href="./App.tsx">
+                        About us
                     </ItemMobile>
                 </MobileNavOpen>
             </Mobile>

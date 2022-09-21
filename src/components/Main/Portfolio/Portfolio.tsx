@@ -10,22 +10,46 @@ import Portfolio6 from '../../../imgs/6Portfolio.png';
 export default function portfolio() {
 
     const Main = tw.div`
-    bg-white
+        flex
+        flex-col
+        items-center
+        justify-center
+        bg-white
+        font-quick
     `
     const ImpactSub = tw.div`
-    
+        text-3xl
+        font-semibold
+        mt-1
+        mb-6
     `
     const Title = tw.div`
-
+        mt-14
+        text-sm
+        text-blue-600
+        font-bold
     `
     const IMGTitle = tw.div`
-
+        font-bold
+        text-md
+        mt-4
     `
     const ProjectType = tw.div`
-
+        text-sm
+        text-blue-600
+        mb-6
     `
     const BTNSeeMore = tw.button`
-    
+        w-44
+        h-14
+        bg-blue-700
+        text-white
+        rounded-xl
+        mb-20
+        
+        ease-out
+        duration-300
+        hover:scale-110
     `
     return(
         <>
