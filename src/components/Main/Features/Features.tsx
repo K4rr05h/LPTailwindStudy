@@ -15,6 +15,8 @@ export default function Features() {
     pt-16
     pb-20
     bg-sky-100
+
+    lg:flex-row
     `
     const Bloco = tw.div`
     flex

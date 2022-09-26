@@ -73,38 +73,51 @@ export default function FAQ() {
         font-quick
         font-semibold
     `
+    const ListQuestions = tw.div`
+    
+    `
+    const LGOrganization = tw.div`
+        lg:grid
+        lg:grid-cols-2
+        lg:items-center
+    `
 
     return(
         <>
             <Main>
                 <Title>Frequently Asked Question</Title>
                 <ImpactSub>How can we help?</ImpactSub>
-                <Question>
-                    Question1
-                    <Response>
-                        Blablabla
-                    </Response>
-                </Question>
-                
-                <Question>
-                    Question2
-                    
-                    <Response>
-                        Blablabla
-                    </Response>
-                </Question>
-                
-                <Question>
-                    Question3
-                    <Response>
-                        Blablabla
-                    </Response>
-                </Question>
+                <LGOrganization>
+                    <ListQuestions>
+                        <Question>
+                            Question1
+                            <Response>
+                                Blablabla
+                            </Response>
+                        </Question>
+                        
+                        <Question>
+                            Question2
+                            
+                            <Response>
+                                Blablabla
+                            </Response>
+                        </Question>
+                        
+                        <Question>
+                            Question3
+                            <Response>
+                                Blablabla
+                            </Response>
+                        </Question>
+                    </ListQuestions>
 
-                <img 
-                className=""
-                src={Ph1} 
-                alt="" />
+                    <img 
+                    className=""
+                    src={Ph1} 
+                    alt="" />
+
+                </LGOrganization>
             
                 <ContainerContactDIV>
                     <ContactDIV>

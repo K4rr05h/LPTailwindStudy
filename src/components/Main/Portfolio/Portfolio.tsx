@@ -51,35 +51,64 @@ export default function portfolio() {
         duration-300
         hover:scale-110
     `
+    const LGOrganization = tw.div`
+        flex
+        flex-col
+        items-center
+
+        lg:grid
+        lg:grid-cols-3
+        lg:gap-4
+    `
+    const Item = tw.div`
+        flex
+        flex-col
+        items-center
+        justify-center
+    `
     return(
         <>
             <Main>
                 <Title>Portfolio</Title>
                 <ImpactSub>Our Projects</ImpactSub>
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img src={Portfolio1}/>
-                <IMGTitle>Rocket Science</IMGTitle>
-                <ProjectType>Web Development</ProjectType>
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img src={Portfolio2} />
-                <IMGTitle>Sketch</IMGTitle>
-                <ProjectType>Consultance</ProjectType>
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img src={Portfolio3} />
-                <IMGTitle>Mr Robot</IMGTitle>
-                <ProjectType>Web Design</ProjectType>
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img src={Portfolio4} />
-                <IMGTitle>To-Do-List</IMGTitle>
-                <ProjectType>Web Design</ProjectType>
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img src={Portfolio5} />
-                <IMGTitle>Good Workplace</IMGTitle>
-                <ProjectType>Consultance</ProjectType>
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img src={Portfolio6} />
-                <IMGTitle>Single Person</IMGTitle>
-                <ProjectType>Web Development</ProjectType>
+                <LGOrganization>
+                    <Item>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                        <img src={Portfolio1}/>
+                        <IMGTitle>Rocket Science</IMGTitle>
+                        <ProjectType>Web Development</ProjectType>
+                    </Item>
+                    <Item>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                        <img src={Portfolio2} />
+                        <IMGTitle>Sketch</IMGTitle>
+                        <ProjectType>Consultance</ProjectType>
+                    </Item>
+                    <Item>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                        <img src={Portfolio3} />
+                        <IMGTitle>Mr Robot</IMGTitle>
+                        <ProjectType>Web Design</ProjectType>
+                    </Item>
+                    <Item>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                        <img src={Portfolio4} />
+                        <IMGTitle>To-Do-List</IMGTitle>
+                        <ProjectType>Web Design</ProjectType>
+                    </Item>
+                    <Item>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                        <img src={Portfolio5} />
+                        <IMGTitle>Good Workplace</IMGTitle>
+                        <ProjectType>Consultance</ProjectType>
+                    </Item>
+                    <Item>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                        <img src={Portfolio6} />
+                        <IMGTitle>Single Person</IMGTitle>
+                        <ProjectType>Web Development</ProjectType>
+                    </Item>
+                </LGOrganization>
                 <BTNSeeMore>See More</BTNSeeMore>
             </Main>
         </>
