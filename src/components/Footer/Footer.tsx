@@ -1,6 +1,10 @@
 import tw from 'tailwind-styled-components';
 
 import IMGLogo from '../../imgs/Logo3.png'
+import whatsapp from '../../imgs/icones/whatsapp.png'
+import instagram from '../../imgs/icones/instagram.png'
+import facebook from '../../imgs/icones/facebook.png'
+import youtube from '../../imgs/icones/youtube.png'
 
 export default function footer() {
     
@@ -38,6 +42,14 @@ export default function footer() {
     `
     const MenuItems = tw.button`
         text-sm
+
+        duration-200
+
+        hover:scale-104
+        hover:text-sky-300
+
+        active:scale-90
+        active:text-sky-100
     `
     const ListMenuItems = tw.div`
         flex
@@ -48,8 +60,9 @@ export default function footer() {
         flex
         flex-row
         justify-center
-        w-28
+        w-40
         mt-10
+        gap-2
     `
     const Credits = tw.div`
         my-10
@@ -58,106 +71,103 @@ export default function footer() {
         cursor-pointer
 
         duration-100
-        active:scale-150
+        active:scale-125
     `
     const LGContent = tw.div`
         lg:grid
-        lg:grid-cols-5
+        lg:grid-cols-3
         lg:mb-12
         lg:mt-6
+        lg:items-start
+        lg:gap-12
     `
     const MenuSection = tw.div`
         flex
         flex-col
         items-center
         justify-start
+        lg:pt-6
     `
 
     return(
-        <>
-            <Main>
-                <LGContent>
-                    <Logomarca>
-                        <Logo>
-                            <img src={IMGLogo} alt="" />
-                        </Logo>
-                        <p>JR Enterprises</p>
-                    </Logomarca>
-                    <MenuSection>
-                        <TitleMenu>
-                            Our Services
-                        </TitleMenu>
-                        <ListMenuItems>
-                            <MenuItems>
-                                Link One
-                            </MenuItems>
-                            <MenuItems>
-                                Link Two
-                            </MenuItems>
-                            <MenuItems>
-                                Link Three
-                            </MenuItems>
-                            <MenuItems>
-                                Link Four
-                            </MenuItems>
-                            <MenuItems>
-                                Link Five
-                            </MenuItems>
-                        </ListMenuItems>
-                    </MenuSection>
-                    <MenuSection>
-                        <TitleMenu>
-                            About Us
-                        </TitleMenu>
-                        <ListMenuItems>
-                            <MenuItems>
-                                Link One
-                            </MenuItems>
-                            <MenuItems>
-                                Link Two
-                            </MenuItems>
-                            <MenuItems>
-                                Link Three
-                            </MenuItems>
-                        </ListMenuItems>
-                    </MenuSection>
-                    <MenuSection>
-                        <TitleMenu>
-                            Contacts
-                        </TitleMenu>
-                        <ListMenuItems>
-                            <MenuItems>
-                                Link One
-                            </MenuItems>
-                            <MenuItems>
-                                Link Two
-                            </MenuItems>
-                            <MenuItems>
-                                Link Three
-                            </MenuItems>
-                        </ListMenuItems>
-                    </MenuSection>
-                    <MenuSection>
-                        <SocialMedia>
-                            <BTNSocialMedia>
-                                <img src={IMGLogo} alt="" />
-                            </BTNSocialMedia>
-                            <BTNSocialMedia>
-                                <img src={IMGLogo} alt="" />
-                            </BTNSocialMedia>
-                            <BTNSocialMedia>
-                                <img src={IMGLogo} alt="" />
-                            </BTNSocialMedia>
-                            <BTNSocialMedia>
-                                <img src={IMGLogo} alt="" />
-                            </BTNSocialMedia>
-                        </SocialMedia>
-                        <Credits>
-                        Copyright © 2022, Ratchanon
-                        </Credits>
-                    </MenuSection>
-                </LGContent>
-            </Main>
-        </>
+        <Main>
+            <Logomarca>
+                <Logo>
+                    <img src={IMGLogo} alt="" />
+                </Logo>
+                <p>JR Enterprises</p>
+            </Logomarca>
+            <LGContent>
+                <MenuSection>
+                    <TitleMenu>
+                        Our Services
+                    </TitleMenu>
+                    <ListMenuItems>
+                        <MenuItems>
+                            Link One
+                        </MenuItems>
+                        <MenuItems>
+                            Link Two
+                        </MenuItems>
+                        <MenuItems>
+                            Link Three
+                        </MenuItems>
+                        <MenuItems>
+                            Link Four
+                        </MenuItems>
+                        <MenuItems>
+                            Link Five
+                        </MenuItems>
+                    </ListMenuItems>
+                </MenuSection>
+                <MenuSection>
+                    <TitleMenu>
+                        About Us
+                    </TitleMenu>
+                    <ListMenuItems>
+                        <MenuItems>
+                            Link One
+                        </MenuItems>
+                        <MenuItems>
+                            Link Two
+                        </MenuItems>
+                        <MenuItems>
+                            Link Three
+                        </MenuItems>
+                    </ListMenuItems>
+                </MenuSection>
+                <MenuSection>
+                    <TitleMenu>
+                        Contacts
+                    </TitleMenu>
+                    <ListMenuItems>
+                        <MenuItems>
+                            Link One
+                        </MenuItems>
+                        <MenuItems>
+                            Link Two
+                        </MenuItems>
+                        <MenuItems>
+                            Link Three
+                        </MenuItems>
+                    </ListMenuItems>
+                </MenuSection>
+            </LGContent>
+            <SocialMedia>
+                <BTNSocialMedia>
+                    <img src={whatsapp} alt="" />
+                </BTNSocialMedia>
+                <BTNSocialMedia>
+                    <img src={instagram} alt="" />
+                </BTNSocialMedia>
+                <BTNSocialMedia>
+                    <img src={facebook} alt="" />
+                </BTNSocialMedia>
+                <BTNSocialMedia>
+                    <img src={youtube} alt="" />
+                </BTNSocialMedia>
+            </SocialMedia>
+            <Credits>Copyright © 2022, Ratchanon</Credits>
+        </Main>
     )
 }

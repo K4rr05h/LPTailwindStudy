@@ -12,28 +12,29 @@ export default function header(props: { acao: any; }) {
 
     // Header Styles
     const Header = tw.div`
-    fixed
-    p-4
-    flex
-    flex-row
-    justify-between
-    items-center
-    w-full
-    bg-transparent
-    rounded-b-lg
-    z-100
+        fixed
+
+        p-4
+        flex
+        flex-row
+        justify-between
+        items-center
+        w-full
+        bg-transparent
+        rounded-b-lg
+        z-10
     `
     const Items = tw.div`
-    flex
-    flex-row
-    gap-10
-    ml-10
+        flex
+        flex-row
+        gap-10
+        ml-10
 
-    hidden
-    md:flex
-    md:flex-row
-    md:gap-10
-    md:ml-10
+        hidden
+        md:flex
+        md:flex-row
+        md:gap-10
+        md:ml-10
     `
     const Item = tw.button`
         rounded
@@ -41,6 +42,10 @@ export default function header(props: { acao: any; }) {
         text-white
         align-text-center
         text-sm
+        h-10
+        w-20
+
+        rounded-md
 
         font-quick
         
@@ -51,6 +56,11 @@ export default function header(props: { acao: any; }) {
         transform
         hover:text-red-200
         hover:scale-110
+
+        active:scale-90
+        active:bg-slate-400
+        active:duration-100
+        active:text-red-800
     `
     const Logo = tw.div`
         flex
@@ -63,28 +73,36 @@ export default function header(props: { acao: any; }) {
         gap-4
     `
     const WorkBtn = tw.button`
-    rounded-md
-    cursor-pointer
-    text-white
-    text-center
-    text-sm
-    bg-transparent
-    px-3
-    py-2
+        hidden
 
-    font-quick
-    
-    // hover
-    transition
-    ease-in-out
-    duration-300
-    transform
-    hover:text-red-700
-    hover:scale-110
-    hover:bg-zinc-200
+        rounded-md
+        cursor-pointer
+        bg-transparent
+        px-3
+        py-2
 
-    hidden
-    md:inline
+        font-quick
+        text-white
+        text-center
+        text-sm
+
+        animate-pulse
+        
+        // hover
+        transition
+        ease-in-out
+        duration-300
+        transform
+
+        hover:text-red-700
+        hover:scale-110
+        hover:bg-zinc-200
+
+        active:duration-100
+        active:scale-90
+        active:bg-zinc-50
+
+        md:inline
     `
     const Hamburguer = tw.div`
         w-12
@@ -109,15 +127,17 @@ export default function header(props: { acao: any; }) {
     `
     // NavDrawerMobile Styles
     const XBtn = tw.button`
-    pointer
-    p-6
+        pointer
+        p-6
 
-    transition
-    ease-in-out
-    duration-300
-    hover:scale-110
+        transition
+        ease-in-out
+        duration-300
+        hover:scale-110
     `
     const Mobile = tw.div`
+        z-0
+    
         fixed
         text-end
         w-full
@@ -132,17 +152,17 @@ export default function header(props: { acao: any; }) {
         backdrop-blur-md
     `
     const MobileNavOpen = tw.div`
-    fixed
+        fixed
 
-    divide-y
-    divide-white/10
+        divide-y
+        divide-white/10
 
-    z-50
-    text-center
-    w-full
-    h-full
-        
-    font-semibold
+        z-50
+        text-center
+        w-full
+        h-full
+            
+        font-semibold
     `
     const ItemMobile = tw.a`
         block

@@ -1,0 +1,19 @@
+{
+    "posts": [
+        {
+            "Nome": "Robert Johnson",
+            "Testimonial": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+            "Image": "./imgs/PicGuy.png"
+        },
+        {
+            "Nome": "Michael Douglas",
+            "Testimonial": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+            "Image": "./imgs/PicGuy.png"
+        },
+        {
+            "Nome": "Sebastian Vettel",
+            "Testimonial": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+            "Image": "./imgs/PicGuy.png"
+        }
+]
+}

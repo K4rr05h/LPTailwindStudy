@@ -12,16 +12,18 @@ export default function Hero() {
         w-full
         pt-32
 
-        lg:flex
-        lg:flex-row
+        md:flex
+        md:flex-row
     `
     const DMSFYB = tw.h1`
         font-quick
         font-light
         text-white
-        text-5xl
+        text-3xl
         text-center
         px-24
+
+        md:text-4xl
 
         lg:text-start
         lg:text-5xl
@@ -34,8 +36,8 @@ export default function Hero() {
         gap-12
         z-0
 
-        md:justify-start
-        md:pl-20
+        lg:justify-start
+        lg:pl-20
     `
     const BTNMain = tw.button`
         w-32
@@ -49,7 +51,8 @@ export default function Hero() {
         duration-300
         hover:scale-110
 
-        active:scale-100
+        active:scale-90
+        active:duration-100
     `
     const DivConteudo = tw.div`
         md:flex
@@ -57,7 +60,6 @@ export default function Hero() {
     `
 
     return(
-        <>
             <Main>
                 <DivConteudo>
                     <DMSFYB className="pt-0 md:pt-12">
@@ -87,9 +89,8 @@ export default function Hero() {
                 src={Saly}/>
                 {/* eslint-disable-next-line jsx-a11y/alt-text */}
                 <img 
-                className="hidden md:inline w-1/3"
+                className="hidden md:inline w-1/3 h-1/3 mb-0 mt-auto"
                 src={SalyLG}/>
             </Main>
-        </>
     )
 }

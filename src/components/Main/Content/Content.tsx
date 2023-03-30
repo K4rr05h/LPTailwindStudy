@@ -9,7 +9,11 @@ export default function content(){
         flex-col
         items-center
         bg-white
-        pt-20
+        py-20
+        
+        lg:grid
+        lg:grid-rows-2
+        lg:justify-items-center
     `
     const WWA = tw.div`
         text-blue-900
@@ -50,21 +54,31 @@ export default function content(){
         text-blue-700
     `
     const Block1 = tw.div`
-        lg:flex
+        flex
+        flex-col
+        items-center
+        justify-center
+        px-40
+
         lg:flex-row-reverse
-        lg:items-center
-        lg:justify-center
-        lg:gap-12
         lg:w-3/5
         lg:mb-10
+        lg:px-0
+        lg:gap-20
+        lg:ml-12
     `
     const Block2 = tw.div`
-        lg:flex
+        flex
+        flex-col
+        items-center
+        justify-center
+        px-40
+
         lg:flex-row-reverse
-        lg:items-center
-        lg:justify-center
         lg:w-3/5
-        lg:gap-10
+        lg:gap-48
+        lg:px-0
+        lg:mr-28
     `
     const ImportantTexts = tw.div`
         lg:flex
@@ -74,12 +88,21 @@ export default function content(){
         lg:flex
         lg:flex-col
     `
+    const IMG = tw.img`
+        my-10
+        shadow-lg
+        rounded-img
+        shadow-gray-400
+        
+        lg:duration-300
+        lg:hover:scale-104
+    `
+    
     return(
         <Main>
             <Block1>
                 {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img 
-                className="w-4/6 shadow-lg rounded-img shadow-gray-400"
+                <IMG
                 src={ContentIMG}/>
                 <ImportantTexts>
                     <WWA>Who we are</WWA>
@@ -107,8 +130,7 @@ export default function content(){
                     <NumbSub>Coffee</NumbSub>
                 </CompanyNumbers>
                 {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                <img 
-                className="my-10 w-4/6 shadow-lg rounded-img shadow-gray-400 lg:w-2/4 lg:mr-40"
+                <IMG
                 src={VRBoy}/>
             </Block2>
         </Main>

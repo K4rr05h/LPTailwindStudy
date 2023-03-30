@@ -11,6 +11,7 @@ module.exports = {
       extend: {
         scale: {
           '101': '1.01',
+          '104': '1.04',
         },
         height: {
           '120': '1920px'
@@ -24,7 +25,9 @@ module.exports = {
         borderRadius: {
           'img' : '40px',
           'img2' : '60px'
-        }
+        },
+        backgroundImage: {
+        },
           },
         plugins: [],
         }

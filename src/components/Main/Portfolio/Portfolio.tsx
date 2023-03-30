@@ -65,52 +65,54 @@ export default function portfolio() {
         flex-col
         items-center
         justify-center
+        cursor-pointer
+
+        duration-300
+        hover:scale-104
     `
     return(
-        <>
-            <Main>
-                <Title>Portfolio</Title>
-                <ImpactSub>Our Projects</ImpactSub>
-                <LGOrganization>
-                    <Item>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <img src={Portfolio1}/>
-                        <IMGTitle>Rocket Science</IMGTitle>
-                        <ProjectType>Web Development</ProjectType>
-                    </Item>
-                    <Item>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <img src={Portfolio2} />
-                        <IMGTitle>Sketch</IMGTitle>
-                        <ProjectType>Consultance</ProjectType>
-                    </Item>
-                    <Item>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <img src={Portfolio3} />
-                        <IMGTitle>Mr Robot</IMGTitle>
-                        <ProjectType>Web Design</ProjectType>
-                    </Item>
-                    <Item>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <img src={Portfolio4} />
-                        <IMGTitle>To-Do-List</IMGTitle>
-                        <ProjectType>Web Design</ProjectType>
-                    </Item>
-                    <Item>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <img src={Portfolio5} />
-                        <IMGTitle>Good Workplace</IMGTitle>
-                        <ProjectType>Consultance</ProjectType>
-                    </Item>
-                    <Item>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <img src={Portfolio6} />
-                        <IMGTitle>Single Person</IMGTitle>
-                        <ProjectType>Web Development</ProjectType>
-                    </Item>
-                </LGOrganization>
-                <BTNSeeMore>See More</BTNSeeMore>
-            </Main>
-        </>
+        <Main>
+            <Title>Portfolio</Title>
+            <ImpactSub>Our Projects</ImpactSub>
+            <LGOrganization>
+                <Item>
+                    {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                    <img src={Portfolio1}/>
+                    <IMGTitle>Rocket Science</IMGTitle>
+                    <ProjectType>Web Development</ProjectType>
+                </Item>
+                <Item>
+                    {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                    <img src={Portfolio2} />
+                    <IMGTitle>Sketch</IMGTitle>
+                    <ProjectType>Consultance</ProjectType>
+                </Item>
+                <Item>
+                    {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                    <img src={Portfolio3} />
+                    <IMGTitle>Mr Robot</IMGTitle>
+                    <ProjectType>Web Design</ProjectType>
+                </Item>
+                <Item>
+                    {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                    <img src={Portfolio4} />
+                    <IMGTitle>To-Do-List</IMGTitle>
+                    <ProjectType>Web Design</ProjectType>
+                </Item>
+                <Item>
+                    {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                    <img src={Portfolio5} />
+                    <IMGTitle>Good Workplace</IMGTitle>
+                    <ProjectType>Consultance</ProjectType>
+                </Item>
+                <Item>
+                    {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                    <img src={Portfolio6} />
+                    <IMGTitle>Single Person</IMGTitle>
+                    <ProjectType>Web Development</ProjectType>
+                </Item>
+            </LGOrganization>
+            <BTNSeeMore>See More</BTNSeeMore>
+        </Main>
     )
 }

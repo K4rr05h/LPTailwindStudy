@@ -29,7 +29,7 @@ export default function App() {
   // Estilização geral do código
 
   const Body = tw.div`
-    bg-bluebg
+    bg-bluebg/90
     h-full
   `
 
