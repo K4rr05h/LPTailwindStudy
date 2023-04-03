@@ -73,6 +73,9 @@ export default function FAQ() {
         w-full
         bg-sky-50
         rounded-img2
+
+        duration-300
+        hover:scale-110
     `
     const CTA = tw.figcaption`
         w-40

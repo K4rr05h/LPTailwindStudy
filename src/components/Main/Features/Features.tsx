@@ -49,6 +49,13 @@ export default function Features() {
         text-justify
         font-quick
     `
+    const Link = tw.a`
+        text-blue-700
+        
+        duration-200
+        hover:text-blue-500
+        hover:scale-110
+    `
 
     return(
         <Main>
@@ -64,9 +71,8 @@ export default function Features() {
                     since the 1500s.
                 </Conteudo>
                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-                <a 
-                className="text-blue-700"
-                href="/src/App.tsx">Link X</a>
+                <Link
+                href="/src/App.tsx">Link X</Link>
             </Bloco> 
             <Bloco>
                 {/* eslint-disable-next-line jsx-a11y/alt-text */}
@@ -80,9 +86,8 @@ export default function Features() {
                     since the 1500s.
                 </Conteudo>
                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-                <a 
-                className="text-blue-700"
-                href="/src/App.tsx">Link X</a>
+                <Link
+                href="/src/App.tsx">Link X</Link>
             </Bloco>
             <Bloco>
                 {/* eslint-disable-next-line jsx-a11y/alt-text */}
@@ -96,9 +101,8 @@ export default function Features() {
                     since the 1500s.
                 </Conteudo>
                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-                <a 
-                className="text-blue-700"
-                href="/src/App.tsx">Link X</a>
+                <Link
+                href="/src/App.tsx">Link X</Link>
             </Bloco>
         </Main>
     )
