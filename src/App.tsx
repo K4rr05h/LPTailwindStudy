@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import tw from 'tailwind-styled-components';
 
 import Header from './components/Header/header';
-import Hero from './components/Main/Hero/Hero';
-import Features from './components/Main/Features/Features';
-import Content from './components/Main/Content/Content';
-import Testimonials from './components/Main/Testimonials/Testimonials';
-import Portfolio from './components/Main/Portfolio/Portfolio';
-import FAQ from './components/Main/FAQ/FAQ';
+import Hero from './components/Main/1.Hero/Hero';
+import Features from './components/Main/2.Features/Features';
+import Content from './components/Main/3.Content/Content';
+import Testimonials from './components/Main/4.Testimonials/Testimonials';
+import Portfolio from './components/Main/5.Portfolio/Portfolio';
+import FAQ from './components/Main/6.FAQ/FAQ';
 import Footer from './components/Footer/Footer';
 
 export default function App() {
